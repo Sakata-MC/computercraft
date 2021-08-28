@@ -1,4 +1,6 @@
-local bridge = peripheral.find("rsBridge") -- Finds the peripheral if one is connected
+-- Portions of code adapted from https://gist.github.com/Seniorendi/26bd8ecaec400146f2e38790faceead8
+
+local bridge = peripheral.find("rsBridge")
 if bridge == nil then error("rsBridge not found") end
 local monitor = peripheral.find("monitor")
 if monitor == nil then error("monitor not found") end
@@ -8,7 +10,7 @@ monTitle = "RS FE Use:".. bridge.getEnergyUsage().. "Keep in Stock:"
 -- Format:  [index] = {"Anything","mod:itemname",minimum amount}
 -- Example: [1] = {"Oak Planks","minecraft:oak_planks",128}
 reqItems = {
-[1] = {"Oak Planks","minecraft:oak_planks",128}
+[1] = {"Oak Planks","minecraft:oak_planks",128},
 [2] = {"Glass","minecraft:glass",128}
 }
 
