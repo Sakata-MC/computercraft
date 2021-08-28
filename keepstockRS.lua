@@ -5,7 +5,7 @@ if bridge == nil then error("rsBridge not found") end
 local monitor = peripheral.find("monitor")
 if monitor == nil then error("monitor not found") end
 
-monTitle = "RS FE Use:".. bridge.getEnergyUsage().. "Keep in Stock:"
+monTitle = "RS FE Use:".. bridge.getEnergyUsage().. "  Keep in Stock:"
 
 -- Format:  [index] = {"Anything","mod:itemname",minimum amount}
 -- Example: [1] = {"Oak Planks","minecraft:oak_planks",128}
