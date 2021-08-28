@@ -19,7 +19,7 @@ function craftItems(name, reqName, reqCount)
 	for i = 1, #craftable do
 		craftableCount = tostring(craftable[i].amount)
 		craftableName = craftable[i].name
-		if craftableName == reqName
+		if craftableName == reqName then
 			row = row+1
 			CenterT(name, row+1, colors.black, colors.lightGray, "left")
 			if tonumber(craftableCount) <= tonumber(reqCount)-1 then
