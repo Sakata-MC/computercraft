@@ -9,7 +9,7 @@
 -- "front", "back", "left", "right", "top" or
 -- "bottom"
 
-varSide=left
+varSide="left"
 
 print("Emitting redstone to "..varSide.." side for 5s...")
 redstone.setOutput(varSide, true)
